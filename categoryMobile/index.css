@@ -1,152 +1,287 @@
-
-*{
-   font-family: 'Poppins', sans-serif ;
-}
-.container{
-   width: 100%;
-   margin: 0 auto;
-   
-}
-.container-1{
-   height: 120px;
-   width: 1499px;
-   margin-bottom: 20px;
-   /* background-color: blue; */
-}
-.container-2{
-   max-width: 100%;
-   max-width: 100vh;
-   display: grid;
-   grid-template-columns: 300px 1199px;
-   grid-template-rows: 2600px;
-   grid-template-areas: "first-body second-body" ;
-}
-.first-body{
-   background-color: white;
-   padding: 10px;
-
-}
-.second-body{
-   /* background-color: red; */
-   background-color: #e3e6e6;
-   padding: 10px;
-}
-
-.container-3{
-   height: 580px;
-   margin-top: 30px;
-}
-
-/* For the header */
-
 *{
    box-sizing: border-box;
-   margin: 0;
    padding: 0;
-   font-family: 'Poppins', sans-serif ;
-   line-height: 1.5em;
 }
-header{
-   border-bottom: 1px solid black;
-   padding-bottom: 20px;
-   margin-bottom: 20px;
-   height: 140px;
+.container{
+   max-width: 100%;
+   background-color: rgb(252, 252, 252);
+   padding: 0;
+}
+.container h5, #product{
+   position: relative;
+   margin-left: 60px;
+   top: 10px;
+   padding-bottom: 30px;
+}
+.container #homee{
+   padding: 10px;
+   font-size: 18px;
+   
 }
 
-.logo{
-   position: relative;
-  max-width: 40px;
-   max-height: 40px;
-   /* left: -100px; */
-}
-.nav{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   align-items: center;
-   font-size: 15px;
-   font-weight: bold;
-}
-/* for the user in the nav*/
-.user{
-   position: relative;
-   /* right: -30px; */
-   display: flex;
-   justify-content: space-around;
-}
-.user button{
-   background-color: black;
-   width: 150px;
-   color: white;
-   position: relative;
-   padding: 5px;
-   border-radius: 4px;
-   /* right: -90px; */
-}
-.usr{
-   position: relative;
-   right: 15px;
-   background-color: gray;
-   max-width: 20px;
-   max-height: 20px;
-}
-h3{
-   font-size: 18px;
-   font-weight: bold;
-}
-/* list items and link for nav */
-ul{
-   position: relative;
-   top: 5px;
+/* header */
+.container .header{
    display: flex;
    justify-content: space-between;
+   
+
 }
-li{
-   list-style: none;
-   text-decoration: none;
+.header .user{
+   display: flex;
+   position: relative;
+   left: -20px;
+   top: 10px;
+   
+}
+.header .user i{
+   position: relative;
+   top: 22px;
+   left: -10px;
+}
+.container .head{
+   background-color: white;
+   padding-bottom: 10px;
+}
+
+.header input{
+   color: white;
+   border: none;
+   border-radius: 3px;
+   background-color: darkblue;
+   width: 150px;
+   height: 40px;
+   text-align: center;
+   position: relative;
+   top: 5px;
+   
+  
+}
+.header img{
+   width: 100px;
+   height: 70px;
+   position: relative;
+   top: 10px;
+}
+
+.container .search{
+   /* position: relative; */
+   /* left: 770px; */
+   margin-top: 5px;
+   /* margin-bottom: 8px; */
+   margin-left: 772px;
+   margin-bottom: 8px;
+   background-color: white;
+}
+.search button{
+   padding: 8px;
+   width: 100px;
+   border-radius: 0 4px 4px 0;
+   border-left: none;
+   color: black;
+   background-color:gold;
+   position: relative;
+   top: -2px;
+   
+}
+.search input{
+   position: relative;
+   left: 10px;
+   padding: 8px;
+   border-radius: 4px 0 0 4px;
+   border-right: none;
+   width: 600px;
+}
+span{
+   position: relative;
+   left: 10px;
+}
+/* end of search */
+
+/* end of header */
+/* for the products */
+.first-product{
+   display: flex;
+   justify-content: space-around;
+   height: 250px;
+   margin-bottom: 20px;
+   border: 1px solid lightgray;
+   border-radius: 2px;
+}
+img{
+   position: relative;
+   top: 35px;
+   width: 190px;
+   height: 170px;
+}
+.info{
+   margin-bottom: 20px;
+   border-bottom: 1px solid black;
+}
+.intro{
+   background-color: white;
    padding: 20px;
+   max-width: 93%;
+   margin: 0 auto;
+   border-radius: 3px;
+   margin-bottom: 20px;
+   margin-top: 20px;
 }
+.intro a{
+   color: gray;
+}
+
+/* categories */
+
+.categories{
+   background-color: white;
+   margin-bottom: 20px;
+   max-width: 93%;
+   margin: 0 auto;
+   padding-left: 10px;
+   padding-top: 5px;
+   
+}
+.categories img{
+   width: 90px;
+   height: 80px;
+}
+.categories .boxes{
+   display: flex;
+   /* justify-content: space-between; */
+   margin-bottom: 50px;
+   padding: 10px;
+   position: relative;
+   left: -40px;
+}
+
+.categories .boxes .phones, .laptop,.tablets,.Accessories,.apple{
+   display: flex;
+   border: 1px solid gray;
+   border-radius: 3px;
+   margin-left: 30px;
+   
+   width: 500px;
+   /* justify-content: space-evenly; */
+   align-items: center;
+   padding: 10px;
+   margin-bottom: 30px;
+}
+
+.boxes h4{
+   position: relative;
+   left: 30px;
+}
+.boxes img{
+   position: relative;
+   top: -0.2px;
+}
+/* end of categories */
 a{
    text-decoration: none;
    color: black;
-   
-}
-.new{
-   float: left;
    position: relative;
-   left: 760px;
-   top: 5px;
-   /* right: -49px; */
-   
+   margin-top: 10px;
+   bottom: -2px;
 }
-.new button{
-   background-color: black;
+.first-product{
+   position: relative;
+   background-color: white;
+   max-width: 91%;
+   margin: 0 auto;
+   margin-top: 40px;
+}
+.first-product .text{
+   position: relative;
+   left: -120px;
+}
+.first-product .text-1{
+   position: relative;
+   left: -200px;
+}
+.first-product .pad{
+   position: relative;
+   left: -180px;
+}
+.first-product .text-2{
+   position: relative;
+   left: -150px;
+}
+.first-product .button button{
+   background-color: rgb(46, 46, 165);
+   padding: 12px;
+   width: 140px;
+   margin-top: 110px;
+   border-radius: 4px;
+   border: none;
    color: white;
-   border-radius: 0;
-   width: 100px;
-   padding: 8px;
-   
-
-}
-.new span{
-   position: relative;
-   right: -10px;
-}
-.new input{
-   position: relative;
-   left: -10px;
-   width: 600px;
-   padding: 6px;
-   
 }
 
-/* footer */
+.first-product .button button a{
+   color: white;
+}
+
+.first-product .button button span{
+   margin-right: -15px;
+   padding: 20px;
+   font-weight: bold;
+}
+.first-product .text span{
+   color: blue;
+}
+.first-product .text-1 span{
+   color: blue;
+}
+.first-product .text-2 span{
+   color: blue;
+}
+.first-product .text .money{
+   font-size: 25px;
+}
+.first-product .text-1 .money{
+   font-size: 25px;
+}
+.first-product .text-2 .money{
+   font-size: 25px;
+}
+.first-product .text .first-1, .text-1 .text-2 .pad {
+   padding: 5px;
+   color: gold;
+}
+.first-product .text-1 .first-1{
+   padding: 5px;
+   color: gold;
+}
+.first-product .text-2 .first-1{
+   padding: 5px;
+   color: gold;
+}
+.first-product .text #last{
+   padding: 5px;
+   color: lightgray;
+   margin-right: 20px;
+}
+.first-product .text-1 #last{
+    padding: 5px;
+   color: lightgray;
+   margin-right: 20px;
+}
+.first-product .text-2 #last{
+    padding: 5px;
+   color: lightgray;
+   margin-right: 20px;
+}
+/*  */
+/* footer body */
 #footer{
    display: flex;
    justify-content: space-around;
    text-align: center;
    margin-bottom: 20px;
    border-bottom: 1px solid gray;
+   line-height: 0.4em;
+   margin-top: 50px;
+   background-color: rgb(252, 252, 252);
+   padding: 10px;
 }
 #footer ul{
    display: block;
@@ -157,249 +292,23 @@ a{
    position: relative;
    bottom: 0;
    text-align: center;
-   /* margin-top: 30px; */
-  
+   margin-top: 18px;
+   
+ 
    /* background-color: yellowgreen; */
 }
 
-/* body */
-*{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-family: 'Poppins', sans-serif ;
-   line-height: 1.5em;
-}
 
-.main{
-   background-color: #e3e6e6;
-   width: 990px;
-   /* margin-left: 31%; */
-   padding: 20px;
-   margin-top: 20px;
-}
-.first-product{
-   height: 230px;
+ul{
+   
    display: flex;
    justify-content: space-between;
-   /* background-color: blueviolet; */
-   margin-bottom: 20px;
-   border-bottom: 1px solid black;
-   /* border-top: 1px solid black; */
 }
-/* etxts for products */
-.first-product .text{
-   position: relative;
-   left: 35px;
-}
-.first-product .text{
-   position: relative;
-   left: -410px;
-}
-.first-product .text-1{
-   position: relative;
-   left: -70px;
-}
-.first-product .text-len{
-   position: relative;
-   left: -45px;
-}
-.first-product .text-app{
-   position: relative;
-   left: -210px;
-}
-.first-product .text-asp{
-   position: relative;
-   left: -410px;
-}
-.first-product .text-pav{
-   position: relative;
-   left: -380px;
-}
-.first-product .text-appp{
-   position: relative;
-   left: -450px;
-}
-.first-product .text-del{
-   position: relative;
-   left: -380px;
-}
-.first-product .text-dell{
-   position: relative;
-   left: -390px;
-}
-.text{
-   position: relative;
-   left: -50px;
-}
-img{
-   position: relative;
-   top: 15px;
-   width: 200px;
-   height: 170px;
-}
-.info{
-   margin-bottom: 20px;
-   border-bottom: 1px solid black;
-}
-a{
-   text-decoration: none;
-   color: black;
-   position: relative;
-   margin-top: 10px;
-   bottom: -2px;
-}
-button{
-   background-color: white;
-   color: black;
-   border: none;
-   border-radius: 4px;
-   width: 150px;
-   padding: 6px;
-   margin-top: 15px;
-}
-button span{
-   position: relative;
-   right: -15px;
-   padding: 20px;
-   font-weight: bold;
-}
-button a{
-   position: relative;
-   top: -0.5px;
-   text-decoration: none;
-   text-align: center;
-}
-
-/* first body */
-*{
-   padding: 0;
-}
-.nav-1{
-   width: 370px;
-   padding: 10px 10px;
-}
-.nav-1 select{
-   background-color: white;
-   width: 200px;
-  height: 40px;
-  border: 1px solid gray;
-  border-radius: 8px;
-  margin-bottom: 9px;
-  font-weight: bold;
-}
-.nav-1 input {
-   position: relative;
-   left: 2px;
-   margin-bottom: 15px;
-   /* margin-left: 5px; */
-   border: 5px solid black;
-   padding: 30px;
-   width: 50px;
-}
-.heading{
-   display: flex;
-   justify-content: space-between;
-   margin-top: 20px;
-}
-.heading span{
-   background-color: gray;
-   width: 20px;
-   height: 20px;
-   text-align: center;
-   top: 8px;
-   left: -110px;
-   position: relative;
-}
-.heading-1 span{
-   position: relative;
-   top: 9px;
-}
-
-/* main body */
-*{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-family: 'Poppins', sans-serif ;
-   line-height: 1.5em;
-}
-
-.main{
-   background-color: #e3e6e6;
-   width: 980px;
-   margin-left: 31%;
+ul li{
+   list-style: none;
    padding: 20px;
 }
-.first-product{
-   height: 230px;
-   display: flex;
-   justify-content: space-between;
-   /* background-color: blueviolet; */
-   margin-bottom: 20px;
-   border-bottom: 1px solid black;
-   /* border-top: 1px solid black; */
-}
-/* etxts for products */
-.first-product .text{
-   position: relative;
-   left: -340px;
-}
-.first-product .text-spa{
-   position: relative;
-   left: -20px;
-}
-.first-product .text-1{
-   position: relative;
-   left: -120px;
-}
-.first-product .text-gal{
-   position: relative;
-   left: -250px;
-}
-.first-product .text-inf{
-   position: relative;
-   left: -300px;
-}
-.first-product .text-appl{
-   position: relative;
-   left: -200px;
-}
-img{
-   position: relative;
-   top: 15px;
-   width: 200px;
-   height: 170px;
-}
-.info{
-   margin-bottom: 20px;
-   border-bottom: 1px solid black;
-}
-a{
+ul li a{
    text-decoration: none;
    color: black;
-   position: relative;
-   margin-top: 10px;
-   bottom: -2px;
-}
-button{
-   background-color: white;
-   color: black;
-   border: none;
-   border-radius: 4px;
-   width: 150px;
-   padding: 6px;
-   margin-top: 15px;
-}
-button span{
-   position: relative;
-   right: -15px;
-   padding: 20px;
-   font-weight: bold;
-}
-button a{
-   position: relative;
-   top: -0.5px;
-   text-decoration: none;
-   text-align: center;
 }
