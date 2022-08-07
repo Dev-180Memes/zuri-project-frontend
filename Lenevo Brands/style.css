@@ -4,16 +4,324 @@
 body {
 margin: 0;
 font-family: 'Poppins', sans-serif;
-    background-color: #efefef;
+background-color: #efefef;
+padding: 0;
+}
+
+.white-bg {
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+    }
+    
+/*### CREATE FLEX NAV ROW ###*/
+.row {  
+  display: flex;
+  flex-flow: row wrap;
+    padding: 20px 20px 0 20px;
+}
+
+/* CREATE THREE COLUMN FOR NAV ROW */
+/* Left column */
+.left-column {
+  flex: 10%;
+    text-align: center;
+}
+
+/* Menu column */
+.menu-column {
+  flex: 70%;
+  background-color: white;
+}
+
+/* Right column */
+.right-column {
+  flex: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+li a {
+  display: block;
+  color: #000;
+  font-size: 12px;
+  padding: 5px 16px;
+  text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover {
+  color: #ddd;
+}
+
+    
+/*###  STYLE MENU SIGN-IN BUTTON  ###*/
+a.button:link, a.button:visited {
+background-color: #053573;
+color: white;
+padding: 5px 40px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 12px;
+}
+
+/*###  STYLE MENU SEARCH  ###*/
+.search .search-container {
+  float: right;
+  padding: 0 20px 20px 20px;
+}
+.search {
+    border-bottom: 3px solid #f9f9f9;
+}
+
+.search:after {
+display: table;
+content: "";
+clear: both;
+    }
+    
+.search input[type=text] {
+  padding: 6px 150px 6px 5px;
+  margin-top: 8px;
+  font-size: 14px;
+  border-radius:5px 0 0 5px;
+  border: 1px solid #000;
+  border-right: none;
+  height: 30px;
+  margin-right: -10px;
+}
+
+.search textarea:focus, input:focus{
+    outline: none;
+}
+
+::placeholder {
+  font-size: 12px;
+}    
+
+.search .search-container button {
+  padding: 9px 10px 9px 10px;
+  margin-top: px;
+  background: #f1f1f1;
+  font-size: 11px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #000;
+  cursor: pointer;
+  color:#000;
+  height: 30px;
+  margin-left: 0;
+  border-left: none;
+}
+  /*### STYLE BRANDS ###*/
+.header {
+    padding: 0 20px;
+}
+.brands {
+    padding: 20px;
+    display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.brand-box {
+    display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 65px 20px 20px;
+  border: 1px solid #efefef;
+}
+.brand-box > div {
+  background-color: #f1f1f1;
+    padding: 20px;
+    display: inline-block
+}
+.details {
+    padding: 20px;
+}
+
+/*### STYLE LISTINGS ###*/
+.list-image{
+    float: left;
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+}
+.list-content{
+    float: left;
+    width: 55%;    
+    padding: 20px 20px 20px 0;
+}
+i {
+    margin-right: 10px;
+}
+.list-button{
+    float: left;
+    width: 25%;    
+    padding: 20px 20px 20px 0;
+}
+.listing:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.store {
+    margin-top: 95px;
+    background-color: dimgrey;
+    padding: 10px 25px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px,
+}
+.listing {
+    border: 1px solid #ddd;
+    box-shadow: ;
+}
+.list-padding {
+    padding: 20px 20px;
+}
+/*### STYLE PAGINATION ###*/
+.center {
+  text-align: center;
+    padding: 40px 0;
+}    
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 
-
-
-
+/*### STYLE FOOTER SECTION ###*/
+.footer-col {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5rem;
+  justify-content: center;
+  padding: 50px 0;
+  font-size: 12.5px;
+  background-color: #ddd;
+    }
+    
+    .last-row {
+    border-top:1px solid #000;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        font-size: 12px;
+    }
+h4 {
+    color: #053573;
+}
 
 /* Responsive layout WITH FLEX - when the screen is less than 700px wide, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
- 
+
+@media screen and (max-width: 775px) {
+  /*###  AJUST ROW ON MOBILE  ###*/  
+  .row {  
+  display: flex;
+  flex-flow: column;
+}
+/*###  STYLE MENU SEARCH  ###*/
+  .search .search-container {
+  float: none;
+  width: 85%;
+  margin: auto;
+}
+  .search input[type=text] {
+  padding: 20px;
+}
+/*###  WHITE CONTENT BOX  ###*/
+.white-bg {
+    background-color: #fff;
+    width: auto;
+    }
+ /*###  STYLE MENU SEARCH  ###*/   
+.search input[type=text] {
+  padding: 9px 5px 5px 5px;
+  margin-top: 15px;
+  font-size: 14px;
+  border-radius:  0;
+  border: 1px solid #efefef;
+  height: 30px;
+}
+
+::placeholder {
+  font-size: 12px;
+}    
+
+.search .search-container button {
+  padding: 9px 5px 9px 5px;
+  background: #000;
+  font-size: 11px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #efefef;
+  cursor: pointer;
+  color:aliceblue;
+  height: 30px;
+}
+    .brands {
+        display: none;
+    }
+    
+.list-image{
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+    
+.list-content{
+    float: none;
+    padding: 20px;
+    width: 100%;
+}
+.list-button{
+    float: none;  
+    padding: 20px;
+    width: 100%; 
+}
+.store {
+    margin-top: 0;
+}
 
 }

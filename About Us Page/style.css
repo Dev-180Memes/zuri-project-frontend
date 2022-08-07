@@ -4,27 +4,28 @@
 body {
 margin: 0;
 font-family: 'Poppins', sans-serif;
-    background-color: #efefef;
+background-color: #efefef;
+padding: 0;
 }
 
 .white-bg {
     background-color: #fff;
     width: 70%;
     margin: auto;
-    padding: 20px;
     }
     
 /*### CREATE FLEX NAV ROW ###*/
 .row {  
   display: flex;
   flex-flow: row wrap;
+    padding: 20px 20px 0 20px;
 }
 
-/* Create three menu columns that sits next to each other */
+/* CREATE THREE COLUMN FOR NAV ROW */
 /* Left column */
 .left-column {
   flex: 10%;
-  background-color: #f1f1f1;
+    text-align: center;
 }
 
 /* Menu column */
@@ -33,10 +34,11 @@ font-family: 'Poppins', sans-serif;
   background-color: white;
 }
 
+
 /* Right column */
 .right-column {
   flex: 10%;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -66,7 +68,7 @@ li a:hover {
 }
 
     
-/*###  STYLE NAV SIGN-IN BUTTON  ###*/
+/*###  STYLE MENU SIGN-IN BUTTON  ###*/
 a.button:link, a.button:visited {
 background-color: #053573;
 color: white;
@@ -76,8 +78,11 @@ text-decoration: none;
 display: inline-block;
 font-size: 12px;
 }
+
+/*###  STYLE MENU SEARCH  ###*/
 .search .search-container {
   float: right;
+  padding: 0 20px 20px 20px;
 }
 
 .search:after {
@@ -87,12 +92,18 @@ clear: both;
     }
     
 .search input[type=text] {
-  padding: 9px 150px 9px 5px;
+  padding: 6px 150px 6px 5px;
   margin-top: 8px;
-  font-size: 20px;
-  margin-right: 0px;
-  border-radius: 0 5px 5px 0;
-  border: 1px solid #efefef;
+  font-size: 14px;
+  border-radius:5px 0 0 5px;
+  border: 1px solid #000;
+  border-right: none;
+  height: 30px;
+  margin-right: -10px;
+}
+
+.search textarea:focus, input:focus{
+    outline: none;
 }
 
 ::placeholder {
@@ -100,52 +111,83 @@ clear: both;
 }    
 
 .search .search-container button {
-  padding: 15px 25px;
-  margin-top: 8px;
-  background: #000;
+  padding: 9px 10px 9px 10px;
+  margin-top: px;
+  background: #f1f1f1;
   font-size: 11px;
-  border-radius: 5px 0 0 5px;
-  border: none;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #000;
   cursor: pointer;
-  color:aliceblue;
+  color:#000;
+  height: 30px;
+  margin-left: 0;
+  border-left: none;
 }
   
 /*### STYLE CONTENT SECTION ###*/  
-.about-content {
-    padding: 20px;
+.about-content, .download {
+    padding: 0px 50px;
     }
     
 .title {
-color: gainsboro;  
+color: #053573;  
 font-size: 30px;
     }
-    
+.content-unique {
+    margin-top: 80px;
+    }
 .content-para {
     margin-bottom: 80px;
     }
-    
+ul {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+i {
+    margin-right: 10px;
+    font-size: 12px;
+}
+/*#### STYLE DOWNLOAD APP ROW ####*/
+/* Left column */
+.right-content {
+  flex: 70%;
+}
+
+/* Menu column */
+.mobile-image {
+  flex: 30%;
+  text-align: center;
+}
+
 /*### NEWSLETTER UPDATE FORM ###*/
+.update-cover {
+    background-color: moccasin;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
 .update {
-    width: 50%;
+    width: 70%;
     margin: auto;
+    background-color: moccasin;
+    text-align: center;
     }
 
     
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
-  border: 1px solid grey;
-  float: left;
+  border: none;
   width: 60%;
-  background: #f1f1f1;
-    margin-right: 5px;
+  background: #fff;
+  margin-right: 5px;
 }
 
 form.example button {
-  float: left;
-  width: 30%;
+  width: auto;
   padding: 10px;
-  background: #000;
+  background: #053573;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
@@ -167,33 +209,93 @@ form.example::after {
     
 /*### STYLE FOOTER SECTION ###*/
 .footer-col {
-        display: flex;
+  display: flex;
   flex-flow: row wrap;
-  gap: 7rem;
+  gap: 5rem;
   justify-content: center;
-    margin-top: 100px;
-    font-size: 12.5px;
+  padding: 50px 0;
+  font-size: 12.5px;
+  background-color: #efeffe;
     }
     
     .last-row {
     border-top:1px solid #000;
         width: 100%;
         text-align: center;
-        padding-top: 20px;
+        padding: 20px;
         font-size: 12px;
     }
+h4 {
+    color: #053573;
+}
 
 /* Responsive layout WITH FLEX - when the screen is less than 700px wide, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 775px) {
+  /*###  AJUST ROW ON MOBILE  ###*/  
   .row {  
   display: flex;
   flex-flow: column;
 }
+/*###  STYLE MENU SEARCH  ###*/
   .search .search-container {
   float: none;
+  width: 85%;
+  margin: auto;
 }
   .search input[type=text] {
-  padding: 9px 50px 9px 10px;
+  padding: 20px;
+}
+/*###  WHITE CONTENT BOX  ###*/
+.white-bg {
+    background-color: #fff;
+    width: auto;
+    }
+ /*###  STYLE MENU SEARCH  ###*/   
+.search input[type=text] {
+  padding: 9px 5px 5px 5px;
+  margin-top: 15px;
+  font-size: 14px;
+  border-radius:  0;
+  border: 1px solid #efefef;
+  height: 30px;
+}
+
+::placeholder {
+  font-size: 12px;
+}    
+
+.search .search-container button {
+  padding: 9px 5px 9px 5px;
+  background: #000;
+  font-size: 11px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #efefef;
+  cursor: pointer;
+  color:aliceblue;
+  height: 30px;
+}
+    .update {
+    width: 99%;
+    }
+
+/*### NEWSLETTER UPDATE FORM ###*/
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  background: #f1f1f1;
+    width: 100%;
+}
+
+form.example button {
+  width: 100%;
+  padding: 10px;
+  background: #000;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
 }
 
 }
