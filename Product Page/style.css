@@ -70,29 +70,29 @@ li a:hover {
     
 /*###  STYLE MENU SIGN-IN BUTTON  ###*/
 a.button:link, a.button:visited {
-background-color: #053573;
-color: white;
-padding: 5px 40px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 12px;
+    background-color: #053573;
+    color: white;
+    padding: 5px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
 }
 
 /*###  STYLE MENU SEARCH  ###*/
 .search .search-container {
-  float: right;
-  padding: 0 20px 20px 20px;
+    float: right;
+    padding: 0 20px 20px 20px;
 }
 .search {
     border-bottom: 3px solid #f9f9f9;
 }
 
 .search:after {
-display: table;
-content: "";
-clear: both;
-    }
+    display: table;
+    content: "";
+    clear: both;
+}
     
 .search input[type=text] {
   padding: 6px 150px 6px 5px;
@@ -105,7 +105,7 @@ clear: both;
   margin-right: -10px;
 }
 
-.search textarea:focus, input:focus{
+.search textarea:focus, input:focus {
     outline: none;
 }
 
@@ -148,8 +148,8 @@ clear: both;
 }
 /*### STYLE STAR ICONS ###*/
 .fa-star {
-    color: #000;
-    margin: 0;
+   color: #000;
+   margin: 0;
 }
 /*### STYLE FIRST THREE BUTTONS ###*/
 .sam-buttons {
@@ -172,7 +172,7 @@ clear: both;
 
 /*### STYLE LISTINGS ###*/
 
-.list-content{
+.list-content {
     float: left;
     width: 75%;    
     font-size: 12px;
@@ -181,7 +181,7 @@ clear: both;
 i {
     margin-right: 10px;
 }
-.list-button{
+.list-button {
     float: left;
     width: 25%;    
     padding: 30px 20px 30px 0;
@@ -210,19 +210,19 @@ i {
 }
 /*#### STYLE TOP BUTTON PARAGRAPH ####*/
 .top-button {
-  font-size:12px;  
+    font-size:12px;  
     float: right;
 }
 .mobile-button {
- font-size:12px;
- margin-left: 19px;
+    font-size:12px;
+    margin-left: 19px;
 }
 /*#### STYLE RELATED PRODUCTS ####*/
 .one, .two, .three, .four {
     float: left;
     width: 24%;
 }
-.one p, .two p, .three p, .four p{
+.one p, .two p, .three p, .four p {
     font-size: 12px;
 }
 .related-products {
@@ -239,11 +239,11 @@ i {
     text-align: center;
 }
 .next-button { 
-padding-top: 200px;
+    padding-top: 200px;
 }
 /*#### STYLE SPECIFICATIONS ####*/
 .popular, .video {
-  height: 300px;
+    height: 300px;
     padding-top: 20px;
 }
 .spec-details {
@@ -289,7 +289,9 @@ padding-top: 200px;
   border: 1px solid #042D61;
 }
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
 
 .pagination a:first-child {
   border-top-left-radius: 5px;
@@ -312,12 +314,12 @@ padding-top: 200px;
   background-color: #ddd;
     }
     
-    .last-row {
+.last-row {
     border-top:1px solid #000;
-        width: 100%;
-        text-align: center;
-        padding: 20px;
-        font-size: 12px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
     }
 .footer-col h4 {
     color: #053573;
@@ -332,7 +334,7 @@ padding-top: 200px;
   flex-flow: column;
 }
 /*###  STYLE MENU SEARCH  ###*/
-  .search .search-container {
+.search .search-container {
   float: none;
   width: 85%;
   margin: auto;
@@ -369,31 +371,31 @@ padding-top: 200px;
   color: #fff;
   height: 30px;
 }
-    /*#### STYLE LIST SECTION ####*/
-    .list-content {
-        float: none;
-        width: 100%;
-    }
-   .list-button, .left, .right {
-        float: none;
-        width: 100%;
-    }
-    .top-button, .store-button, .store-button, .mobile-button { 
+/*#### STYLE LIST SECTION ####*/
+.list-content {
+   float: none;
+   width: 100%;
+}
+.list-button, .left, .right {
+     float: none;
+     width: 100%;
+ }
+.top-button, .store-button, .store-button, .mobile-button { 
     float: none;
-        margin: 0;
+    margin: 0;
 }
     /*#### STYLE RELATED PRODUCT ####*/
-    .one {
+.one {
     float: left;
     width: 90%;
 }
-      .two, .three, .four, .popular, .left, .video {
+.two, .three, .four, .popular, .left, .video {
     display: none;
 }
-    .ratings {
+.ratings {
    padding: 0 20px;
 }
-    .star-rating {
+.star-rating {
     padding-left: 50px;
 }
 }
