@@ -34,61 +34,60 @@
       <!-- end of head -->
       <!-- start of body -->
       <div class="body">
-         <h3 style="color: white; background-color: darkblue; padding: 10px;">My Profile</h3>
+         <h3 style="color: white; background-color:rgb(33, 60, 82);; padding: 10px; position: relative; top: -15px;">My Profile</h3>
       </div>
       <div class="container-2">
          <div class="checkboxes">
             <div class="first-body">
                <label for="profile">
-                  <input type="checkbox" id="first">
-                  My Profile
+                  <a href="#"><i class="fa fa-user-circle-o"></i>
+                  My Profile</a>
                </label>
                <label for="reviews">
-                  <input type="checkbox" id="first">
-                  My reviews
+                  <a href="#"><i class="fa fa-edit"></i>
+                  My reviews</a>
                </label>
                <label for="watchlist">
-                  <input type="checkbox" id="first">
-                  My Watchlist
+                  <a href="#"><i class="fa fa-heart-o"></i>
+                  My Watchlist</a>
                </label>
                <label for="history">
-                  <input type="checkbox" id="first">
-                  My History
+                  <a href="#"><i class="fa fa-history"></i>
+                  My History</a>
                </label>
                <label for="alerts">
-                  <input type="checkbox" id="first">
-                  My Alerts
+                  <a href="#"><i class="fa fa-bell"></i>
+                  My Alerts</a>
                </label>
                <label for="logout">
-                  <input type="checkbox" id="first">
-                  Logout
-               </label>
+                  <a href="#"><i class="fa fa-sign-out"></i>
+                  Logout</a>
+               </label></a>
             </div>
          </div>
          <!-- second body -->
          <div class="second-body">
             <div class="price-alert">
-               <div class="main">
+               <div class="main" style="position: relative; top: 18px;">
                   <img src="images/infinix.jpeg" alt="">
                   <h4>Infinix Hot 12 Play</h4>
-                  <p style="margin-bottom: 10px;">N3999</p>
-                  <h3 id="review"><span><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span><span id="last"><i class="fa fa-star"></i></span>( 0 review )</h3>
-                  <h5 style="font-size: 12px;">From stores with more than three stars</h5>
+                  <h3 style="margin-bottom: 10px;"> <span style="color: rgb(33, 60, 82);">&#8358 50,000</span> </h3>
+                  <h3 id="review"><span  style="color: gold;"><i class="fa fa-star"></i></span><span style="color: gold;"><i class="fa fa-star"></i></span><span style="color: gold;"><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span><span id="last"><i class="fa fa-star"></i></span>(5)</h3>
+                  <h5 style="font-size: 12px; position: relative; top: -10px; left: -20px;">From stores with more than three stars</h5>
                </div>
                <div class="others">
-                  <p style="font-weight: bold; margin-top: 19px; font-size: 13px;">The price drops below</p>
-                  <input type="text" placeholder="0.00" style="width: 480px; padding: 8px; border-radius: 4px; margin-top: 5px;">
-                  <div class="toggle" style="margin-top: 15px;">
-                     <p><span style="color: blue;"><i class="fa fa-toggle-off"></i> off</span> Following that, at price drops greater than:</p>
-                     <input type="text" placeholder="0.00">
-                  </div>
+                  <p style="font-weight: bold; margin-top: 19px; font-size: 13px;">Alert Type</p>
+                  
+                  <select name="alert" id="select" style="width: 480px; padding: 8px; border-radius:4px; margin-top: -10px;">
+                     <option value=""></option>
+                  </select>
                </div>
                <div class="others-1">
                   <label>
                   <input type="checkbox">
                   Only notify when the product is available</label>
                </div>
-               <button type="submit" style="background-color: darkblue; color:white;">Set Price Alert</button>
+               <button type="submit" style="background-color:rgb(33, 60, 82); color:white; border: 0;">Set Price Alert</button>
             </div>
          </div>
          <!-- end of secon body -->
