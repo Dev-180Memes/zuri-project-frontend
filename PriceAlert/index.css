@@ -1,10 +1,12 @@
 *{
    box-sizing: border-box;
    padding: 0;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .container{
    max-width: 100%;
-   background-color: rgb(252, 252, 252);
+  /* height: 1300px; */
+   background-color: rgb(221, 218, 218);
    padding: 0;
 }
 .container h5, #product{
@@ -120,26 +122,37 @@ span{
    display: flex;
    justify-content: space-around;
    text-align: center;
-   margin-bottom: 20px;
+   /* margin-bottom: 20px; */
    border-bottom: 1px solid gray;
    line-height: 0.4em;
-   margin-top: 50px;
-   background-color: rgb(252, 252, 252);
-   padding: 10px;
+   margin-top: -20px;
+   /* background-color: rgb(252, 252, 252); */
+   /* padding: 10px; */
+   position: relative;
+   /* top: -76px; */
+   height: 400px;
 }
 #footer ul{
    display: block;
+   position: relative;
+   top: -50px;
 }
-
+#footer h2{
+   color: rgb(33, 60, 82);
+   position: relative;
+   top: 20px;
+   
+}
 /* footer */
 .foot{
    position: relative;
-   bottom: 0;
+   bottom: 15px;
    text-align: center;
-   margin-top: 18px;
+   margin-top: 20px;
+   /* height: 10px; */
    
  
-   /* background-color: yellowgreen; */
+  
 }
 
 /* container-2 */
@@ -148,11 +161,15 @@ span{
    background-color: white;
    display: grid;
    grid-template-columns: 300px 600px;
-   grid-template-rows: 700px;
+   grid-template-rows: 710px;
    grid-template-areas: "first-body second-body" ;
+   position: relative;
+   top: -35px;
 }
 .first-body{
    background-color: white;
+   border-right: 2px solid lightgray;
+   height: 710px;
 }
 
 /* secnod body alert */
@@ -160,7 +177,9 @@ span{
 border: 2px solid lightgray;
 padding: 10px;
 width: 150%;
-margin-left: 150px;
+margin-left: 130px;
+position: relative;
+top: 30px;
 }
 .main{
    text-align: center;
@@ -173,7 +192,7 @@ margin-left: 150px;
    color: darkgray;
 }
 .main #review{
-   color: gold;
+   color: black;
 }
 #last{
    margin-right: 20px;
@@ -221,8 +240,14 @@ margin-left: 150px;
 /* first body alert */
  .container .checkboxes label{
    display: block;
-   padding: 10px;
+   padding: 12px;
    margin-bottom: 10px;
+   position: relative;
+   top: 10px;
+}
+.first-body a{
+   text-decoration: none;
+   color: black;
 }
 
 .container .checkboxes #first{
