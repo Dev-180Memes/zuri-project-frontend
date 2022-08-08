@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://kit.fontawesome.com/5e3fc3c5f0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@200;900&family=Lexend+Deca:wght@300&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="hero-1">
-        <div class="banner">
+    <div class="hero-header">
+        <div class="item-a">
+            <img src="Frame 2497.png" alt="logo">
+        </div>
+        <div class="item-b">
             <div class="menu">
                 <a href="#">Home</a>
                 <a href="#">Deals</a>
@@ -22,11 +25,13 @@
                 <a href="#">Price Tracker</a>
             </div>
         </div>
-        <button id="sign-in">Sign in</button>
-    </div>
-    <div class="hero-2">
-        <button>All<i class='fas fa-chevron-down' style='color:white'></i></button>
-        <input type="text" placeholder="What are you shopping for?">
+        <div class="item-c">
+            <input type="text" placeholder="What are you shopping for?">
+            <button>Search <i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="item-d">
+            <button id="sign-in">Sign in</button>
+        </div>
     </div>
     <div class="contact">
         <p>
@@ -36,15 +41,16 @@
     <div class="form-parent">
         <form class="form">
             <label for="email">Email</label>
-            <input type="text" placeholder="Eg JohnDoe@gmail.com" name="Email" id="email">
+            <input type="text" placeholder="Enter your email address" name="Email" id="email">
             <label for="password">Password</label>
-            <input type="password" placeholder="Eg JohnDoe95" id="password">
+            <input type="password" placeholder="Enter your password" id="password">
             <label for="password">Message</label>
             <textarea name="" id="message" cols="30" rows="10" placeholder="Your message..."></textarea>
             <button>Send message</button>
         </form>
-
     </div>
+
+    
     <div class="footer-main">
         <div class="footer">
             <ul>
