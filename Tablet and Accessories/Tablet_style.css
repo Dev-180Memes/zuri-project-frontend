@@ -16,10 +16,10 @@ body{
     display: grid;
     grid-template-areas: 
     'a b b d'
-    'a c c d';
+    'a c c c';
     justify-content: space-around;
     row-gap: 0px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    border-bottom: rgb(201, 201, 201) solid 1px;
 }
 
 .hero-header div{
@@ -54,7 +54,7 @@ body{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size:small;
+    font-size:medium;
     
 }
 
@@ -64,6 +64,8 @@ body{
     transform: translateY(-30%);
     border: black solid 1px;
     border-radius: 5px;
+    float: right;
+    transform: translateX(35%);
 }
 
 .item-c input{
@@ -94,17 +96,18 @@ body{
     background-color: none;
     grid-area: d;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     justify-content: center;
-    font-weight: bold
+    font-weight: bold;
+    text-align: center;
 
 }
-
-.item-d .fa-solid{
-    color: #053674;
-}
+ .item-d p{
+    margin-left: 1rem;
+    text-align: center;
+ }
 
 .body{
     width: 100%;
@@ -173,7 +176,7 @@ body{
 }
 
 .accordion .ContentBx.active .check-wrapper{
-    height: 200px;
+    height: 100px;
 }
 .accordion .ContentBx.active .label::before{
     content: "\f078";
@@ -220,13 +223,161 @@ body{
     
 }
 
+.accordion3 .ContentBx3 .check-wrapper::-webkit-scrollbar{
+    display: none;
+     
+ }
+
 .accordion2 .ContentBx2.active .check-wrapper{
-    height: 300px;
+    height: 250px;
 }
 .accordion2 .ContentBx2.active .label::before{
     content: "\f078";
 }
 
+.accordion3{
+    max-width: 400px;
+}
+
+.accordion3 .ContentBx3{
+    position: relative;
+}
+
+.accordion3 .ContentBx3 .label{
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #053674;
+}
+
+.accordion3 .ContentBx3 .label::before{
+    content: "\f077";
+    font-family: "Font Awesome 6 Free";
+    font-weight:600;
+    position: relative;
+    color: #053674;
+    top: 40%;
+    left: 85%;
+    font-size: 0.75rem;
+}
+
+.accordion3 .ContentBx3 .check-wrapper{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    
+}
+
+.accordion3 .ContentBx2 .check-wrapper::-webkit-scrollbar{
+   display: none;
+    
+}
+
+.accordion3 .ContentBx3.active .check-wrapper{
+    height: 250px;
+}
+.accordion3 .ContentBx3.active .label::before{
+    content: "\f078";
+}
+
+.accordion4{
+    max-width: 400px;
+}
+
+.accordion4 .ContentBx4{
+    position: relative;
+}
+
+.accordion4 .ContentBx4 .label{
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #053674;
+}
+
+.accordion4 .ContentBx4 .label::before{
+    content: "\f077";
+    font-family: "Font Awesome 6 Free";
+    font-weight:600;
+    position: relative;
+    color: #053674;
+    top: 40%;
+    left: 85%;
+    font-size: 0.75rem;
+}
+
+.accordion4 .ContentBx4 .check-wrapper{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    
+}
+
+.accordion4 .ContentBx4 .check-wrapper::-webkit-scrollbar{
+   display: none;
+    
+}
+
+.accordion4 .ContentBx4.active .check-wrapper{
+    height: 100px;
+}
+.accordion4 .ContentBx4.active .label::before{
+    content: "\f078";
+}
+
+.accordion5{
+    max-width: 400px;
+}
+
+.accordion5 .ContentBx5{
+    position: relative;
+}
+
+.accordion5 .ContentBx5 .label{
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #053674;
+}
+
+.accordion5 .ContentBx5 .label::before{
+    content: "\f077";
+    font-family: "Font Awesome 6 Free";
+    font-weight:600;
+    position: relative;
+    color: #053674;
+    top: 40%;
+    left: 85%;
+    font-size: 0.75rem;
+}
+
+.accordion5 .ContentBx5 .check-wrapper{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    
+}
+
+.accordion5 .ContentBx5 .check-wrapper::-webkit-scrollbar{
+   display: none;
+    
+}
+
+.accordion5 .ContentBx5.active .check-wrapper{
+    height: 100px;
+}
+.accordion5 .ContentBx5.active .label::before{
+    content: "\f078";
+}
 input[type="checkbox"]{
     appearance: none;
     -webkit-appearance: none;
@@ -238,7 +389,8 @@ input[type="checkbox"]{
     border-radius: 1px;
     display: inline-flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+
 
 }
 
@@ -249,6 +401,7 @@ input[type="checkbox"]{
 
 .wrapper{
     padding-left: 50px;
+    margin-bottom: 0.5rem;
 }
 
 .wrapper label{
@@ -354,7 +507,14 @@ input[type="checkbox"]:checked::after{
 
 .phone-single i{
     transform:translateY(-4rem);
+    cursor: pointer;
 }
+
+.phone-single i:hover{
+    color:#F6CC5C;
+    
+}
+
 .phone-single p{
     font-family: 'Poppins', sans-serif;
     font-size: small;
