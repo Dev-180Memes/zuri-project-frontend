@@ -313,6 +313,7 @@
   }
       .brands {
           display: none;
+          /* float: none; */
       }
       
   .list-image{
