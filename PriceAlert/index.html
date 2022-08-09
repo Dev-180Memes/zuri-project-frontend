@@ -4,135 +4,162 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>PRICE ALERT PAGE</title>
-   <link href="css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
-   <link rel="stylesheet" href="style-priceA.css">
+   <title>Price Alert</title>
+   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="index.css">
 </head>
 <body>
    <div class="container">
-      <div class="row">
-         <div class="col-md-12">
-            <header>
-               <div class="nav navbar">
-                  <img class="logo" src="images/logo.png" alt="logo">
-                  <ul>
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#">Deals</a></li>
-                     <li><a href="#">Category</a></li>
-                     <li><a href="#">Stores</a></li>
-                     <li><a href="#">Price Tracker</a></li>
-                  </ul>
-                  <div class="user" >
-                     <img src="images/cont.png" alt="" class="usr">
-                     <h3>Ismaeel Owolabi</h3>
-                  </div>
-               </div>
-               <div class="input-group col-md-offset-6 col-md-5 neww">
-                   <button class="btn">All <span>&darr;</span></button>
-                  <input class="form-control" type="text" placeholder="what are you shopping for?">
-               </div>
-            </header>
-            <hr>
-            <!--for the body-->
-            <div class="col-md-12 price-alert">
-               <h3>Create price Alert</h3>
-               <div class="product">
-                  <img src="images/infinix.jpeg" alt="item" id="item">
-                  <div class="details">
-                     <!--details of the item-->
-                     <h3>Product name</h3>
-                     <p>$0.00</p>
-                     <br>
-                     <p> **** 0 (0 review) </p>
-                  </div>
-               </div>
-                  <div class="col-md-6" id="under-item">
-                     <p>The price drops below</p>
-                     <input type="text" class="form-control" placeholder="0.00" id="ud-input">
-                     <!-- <div class="col-md-offset-0 col-md-4"> -->
-                        <form action="#" class="form-horizontal" role="form" id="price-drop">
-                           <div class="form-group">
-                              <label for="flw" class=" col-md-7 control-label">
-                                 Following that, at price drops greater than:    </label>
-                                 <div class="col-sm-4">
-                                    <input type="text" class="form-control" 
-                                    id="input" placeholder="0.00">
-                                 </div> 
-                                 <div class="form-group">
-                                    <label>
-                                    <input type="checkbox" id="c-box">
-                                    Only notify when the product is available 
-                                       from stores more than three stars</label>
-                                 </div>
-                           </div>
-                        </form>
-                  </div>
-                  <div class="col-md-8">
-                     <input type="button" value="Set Price Alert" class="form-control" id="set-alert">
-                  </div>
-            </div>
-      
-         <!--start of footer details-->
-            <div class="col-md-12 " id="footer">
-               <!--start of categories-->
-               <div class="categories">
-                  
-                  <ul>
-                     <li><h2>Categories</h2></li>
-                     <li> Mobiles</li>
-                     <li>Laptops</li>
-                     <li>Tablets</li>
-                     <li>Accessories</li>
-                     <li>Appliances</li>
-                  </ul>
-               </div>
-               <!--end of categories-->
-               <!--start of brands-->
-               <div class="brands">
-                  
-                  <ul>
-                     <li><h2>Brands</h2></li>
-                     <li>Apple</li>
-                     <li>Samsung</li>
-                     <li>Tecno</li>
-                     <li>Infinix</li>
-                     <li>Nokia</li>
-                     <li>Hp</li>
-                     <li>Lenovo</li>
-                  </ul>
-               </div>
-               <!--end of brands-->
-               <!--start of about us-->
-               <div class="about-us">
-                  <ul>
-                     <li><h2>Site</h2></li>
-                     <li><a href="#">Abous us</a></li>
-                     <li><a href="#">Team</a></li>
-                     <li><a href="#">Merchant sign up</a></li>
-                     <li><a href="#">User Guide</a></li>
-                  </ul>
-                  
-               </div>
-               
-               <!--end of about us-->
-            </div>
-            
-   <!-- end of footer details-->
-      
-   
-
-         <!--footer-->
-               <div class="foot">
-                  <p>
-                     &copy;2022 Shopsmart.com. All Rights Reserved
-                  </p>
-               </div>
+      <div class="head">
+         <div class="header">
+            <img src="images/logo.png" alt="">
+            <ul class="links">
+               <li><a href="#" class="active">Home</a></li>
+               <li><a href="#">Deals</a></li>
+               <li><a href="#">Category</a></li>
+               <li><a href="#">Stores</a></li>
+               <li><a href="#">Price Tracker</a></li>
+            </ul>
+         <div class="user">
+            <i class="fa fa-user-circle"></i>
+            <h4>John Doe</h4>
          </div>
+         </div>
+         <div class="search">
+            <input type="text" placeholder="what are you shopping for?">
+            <a href="#"><button type="submit">Search <span><i class="fa fa-search"></i> </span></button></a>
+         </div>
+   
       </div>
+      <!-- end of head -->
+      <!-- start of body -->
+      <div class="body">
+         <h3 style="color: white; background-color:rgb(33, 60, 82);; padding: 10px; position: relative; top: -15px;">My Profile</h3>
+      </div>
+      <div class="container-2">
+         <div class="checkboxes">
+            <div class="first-body">
+               <label for="profile">
+                  <a href="#"><i class="fa fa-user-circle-o"></i>
+                  My Profile</a>
+               </label>
+               <label for="reviews">
+                  <a href="#"><i class="fa fa-edit"></i>
+                  My reviews</a>
+               </label>
+               <label for="watchlist">
+                  <a href="#"><i class="fa fa-heart-o"></i>
+                  My Watchlist</a>
+               </label>
+               <label for="history">
+                  <a href="#"><i class="fa fa-history"></i>
+                  My History</a>
+               </label>
+               <label for="alerts">
+                  <a href="#"><i class="fa fa-bell"></i>
+                  My Alerts</a>
+               </label>
+               <label for="logout">
+                  <a href="#"><i class="fa fa-sign-out"></i>
+                  Logout</a>
+               </label></a>
+            </div>
+         </div>
+         <!-- second body -->
+         <div class="second-body">
+            <div class="price-alert">
+               <div class="main" style="position: relative; top: 18px;">
+                  <img src="images/infinix.jpeg" alt="">
+                  <h4>Infinix Hot 12 Play</h4>
+                  <h3 style="margin-bottom: 10px;"> <span style="color: rgb(33, 60, 82);">&#8358 50,000</span> </h3>
+                  <h3 id="review"><span  style="color: gold;"><i class="fa fa-star"></i></span><span style="color: gold;"><i class="fa fa-star"></i></span><span style="color: gold;"><i class="fa fa-star"></i></span><span><i class="fa fa-star"></i></span><span id="last"><i class="fa fa-star"></i></span>(5)</h3>
+                  <h5 style="font-size: 12px; position: relative; top: -10px; left: -20px;">From stores with more than three stars</h5>
+               </div>
+               <div class="others">
+                  <p style="font-weight: bold; margin-top: 19px; font-size: 13px;">Alert Type</p>
+                  
+                  <select name="alert" id="select" style="width: 480px; padding: 8px; border-radius:4px; margin-top: -10px;">
+                     <option value=""></option>
+                  </select>
+               </div>
+               <div class="others-1">
+                  <label>
+                  <input type="checkbox">
+                  Only notify when the product is available</label>
+               </div>
+               <button type="submit" style="background-color:rgb(33, 60, 82); color:white; border: 0;">Set Price Alert</button>
+            </div>
+         </div>
+         <!-- end of secon body -->
+      </div>
+      <!-- end of body -->
+      <!-- footer body -->
+      <div id="footer">
+         <!--start of categories-->
+         <div class="categorie">
+            
+            <ul>
+               <li><h2>Categories</h2></li>
+               <li> Mobiles</li>
+               <li>Laptops</li>
+               <li>Tablets</li>
+               <li>Accessories</li>
+               <li>Appliances</li>
+            </ul>
+         </div>
+         <!--end of categories-->
+         <!--start of brands-->
+         <div class="brands">
+            
+            <ul>
+               <li><h2>Brands</h2></li>
+               <li>Apple</li>
+               <li>Samsung</li>
+               <li>Tecno</li>
+               <li>Infinix</li>
+               <li>Nokia</li>
+               <li>Hp</li>
+               <li>Lenovo</li>
+            </ul>
+         </div>
+         <!--end of brands-->
+         <!--start of about us-->
+         <div class="about-us">
+            <ul>
+               <li><h2>Site</h2></li>
+               <li><a href="#">About us</a></li>
+               <li><a href="#">Team</a></li>
+               <li><a href="#">Merchant sign up</a></li>
+               <li><a href="#">User Guide</a></li>
+            </ul>
+            
+         </div>
+         
+         <!--end of about us-->
+         <!-- start of support -->
+         <div class="about-us">
+            <ul>
+               <li><h2>Support</h2></li>
+               <li><a href="#">Contact us</a></li>
+               <li><a href="#">Help Center</a></li>
+               <li><a href="#">Merchant sign up</a></li>
+               <li><a href="#">Reviews</a></li>
+               <li><a href="#">Privacy policy</a></li>
+            </ul>
+            
+         </div>
+         
+         <!--end of support-->
+      </div>
+      <!-- footer -->
+      <div class="foot">
+         <p>
+            &copy;2022 Shopsmart.com. All Rights Reserved
+         </p>
+      </div>
+      <!-- end of everything -->
+      
+   <!-- end of container -->
    </div>
-
-<script src="https://code.jquery.com/jquery.js"></script>
- <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
