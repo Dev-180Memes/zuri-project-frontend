@@ -173,6 +173,7 @@ i {
     float: left;
     width: 25%;    
     padding: 20px 20px 20px 0;
+    text-align: center;
 }
 .listing:after {
     content: "";
@@ -182,7 +183,7 @@ i {
 .store {
     margin-top: 95px;
     background-color: dimgrey;
-    padding: 10px 25px;
+    padding: 10px 15px;
     border: none;
     color: #fff;
     border-radius: 5px;
@@ -195,6 +196,10 @@ i {
 }
 .list-padding {
     padding: 20px 20px;
+}
+.list-content p {
+    font-size: 14px;
+    margin-right: 20px;
 }
 /*### STYLE PAGINATION ###*/
 .center {
