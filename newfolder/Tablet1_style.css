@@ -1,0 +1,568 @@
+.body-item-a {
+  background-color: #f9fafc;
+  grid-area: a;
+  padding-top: 20px;
+  width: 252px;
+  min-height: 100vh;
+  text-align: left;
+}
+
+.accordion {
+  width: 227.98px;
+  height: 258.38px;
+
+  /* Inside auto layout */
+  text-align: left;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.accordion .ContentBx {
+  position: relative;
+}
+
+.accordion .ContentBx .label {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #053674;
+}
+
+.accordion .ContentBx .label::before {
+  content: "\f077";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  position: relative;
+  color: #053674;
+  top: 40%;
+  left: 85%;
+  font-size: 0.75rem;
+}
+
+.accordion .ContentBx .check-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion .ContentBx .check-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion .ContentBx.active .check-wrapper {
+  height: 200px;
+}
+.accordion .ContentBx.active .label::before {
+  content: "\f078";
+}
+
+.accordion2 {
+  width: 227.98px;
+  height: 258.38px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.accordion2 .ContentBx2 {
+  position: relative;
+}
+
+.accordion2 .ContentBx2 .label {
+  position: relative;
+  padding: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #053674;
+}
+
+.accordion2 .ContentBx2 .label::before {
+  content: "\f077";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  position: relative;
+  color: #053674;
+  top: 40%;
+  left: 85%;
+  font-size: 0.75rem;
+}
+
+.accordion2 .ContentBx2 .check-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion2 .ContentBx2 .check-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion2 .ContentBx2.active .check-wrapper {
+  height: 218.38px;
+}
+.accordion2 .ContentBx2.active .label::before {
+  content: "\f078";
+}
+
+/* accordion3 div */
+.accordion3 {
+  width: 227.98px;
+  height: 148.52px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+.accordion3 .ContentBx3 {
+  position: relative;
+}
+
+.accordion3 .ContentBx3 .label {
+  position: relative;
+  padding: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #053674;
+}
+
+.accordion3 .ContentBx3 .label::before {
+  content: "\f077";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  position: relative;
+  color: #053674;
+  top: 40%;
+  left: 85%;
+  font-size: 0.75rem;
+}
+
+.accordion3.ContentBx3 .check-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion3 .ContentBx3 .check-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion3 .ContentBx3.active .check-wrapper {
+  height: 300px;
+}
+.accordion3 .ContentBx3.active .label::before {
+  content: "\f078";
+}
+/* accordion4 div */
+.accordion4 {
+  width: 227.98px;
+  height: 258.38px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.accordion2 .ContentBx2 {
+  position: relative;
+}
+.accordion4 .ContentBx4 {
+  position: relative;
+}
+
+.accordion4 .ContentBx4 .label {
+  position: relative;
+  padding: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #053674;
+}
+
+.accordion4 .ContentBx4 .label::before {
+  content: "\f077";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  position: relative;
+  color: #053674;
+  top: 40%;
+  left: 85%;
+  font-size: 0.75rem;
+}
+
+.accordion4.ContentBx4 .check-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion4 .ContentBx4 .check-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion4 .ContentBx4.active .check-wrapper {
+  height: 300px;
+}
+.accordion4 .ContentBx4.active .label::before {
+  content: "\f078";
+}
+/* accordion5 div */
+.accordion4 .ContentBx4 {
+  position: relative;
+}
+
+.accordion4 .ContentBx4 .label {
+  position: relative;
+  padding: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #053674;
+}
+
+.accordion4 .ContentBx4 .label::before {
+  content: "\f077";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  position: relative;
+  color: #053674;
+  top: 40%;
+  left: 85%;
+  font-size: 0.75rem;
+}
+
+.accordion4.ContentBx4 .check-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion4 .ContentBx4 .check-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion4 .ContentBx4.active .check-wrapper {
+  height: 300px;
+}
+.accordion4 .ContentBx4.active .label::before {
+  content: "\f078";
+}
+/* accordion5 div */
+.accordion5 .ContentBx5 {
+  position: relative;
+}
+
+.accordion5 .ContentBx5 .label {
+  position: relative;
+  padding: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #053674;
+}
+
+.accordion5 .ContentBx5 .label::before {
+  content: "\f077";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  position: relative;
+  color: #053674;
+  top: 40%;
+  left: 85%;
+  font-size: 0.75rem;
+}
+
+.accordion5.ContentBx5 .check-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion5.ContentBx5 .ContentBx5 .check-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion5.ContentBx5 .ContentBx5.active .check-wrapper {
+  height: 300px;
+}
+.accordion5 .ContentBx5.active .label::before {
+  content: "\f078";
+}
+
+/* accordion6 div */
+.accordion6 .ContentBx6 {
+  position: relative;
+}
+
+.accordion6 .ContentBx6 .label {
+  position: relative;
+  padding: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #053674;
+}
+
+.accordion6 .ContentBx6 .label::before {
+  content: "\f077";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  position: relative;
+  color: #053674;
+  top: 40%;
+  left: 85%;
+  font-size: 0.75rem;
+}
+
+.accordion6.ContentBx6 .check-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion6 .ContentBx6 .check-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion6 .ContentBx6.active .check-wrapper {
+  height: 300px;
+}
+.accordion6 .ContentBx6.active .label::before {
+  content: "\f078";
+}
+
+/* accordion7 div */
+.accordion7 .ContentBx7 {
+  position: relative;
+}
+
+.accordion7 .ContentBx7 .label {
+  position: relative;
+  padding: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #053674;
+}
+
+.accordion7 .ContentBx7 .label::before {
+  content: "\f077";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  position: relative;
+  color: #053674;
+  top: 40%;
+  left: 85%;
+  font-size: 0.75rem;
+}
+
+.accordion7.ContentBx7 .check-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion7 .ContentBx7 .check-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion7 .ContentBx7.active .check-wrapper {
+  height: 300px;
+}
+.accordion7 .ContentBx3.active .label::before {
+  content: "\f078";
+}
+
+/* accordion8 div */
+.accordion8 .ContentBx8 {
+  position: relative;
+}
+
+.accordion8 .ContentBx8 .label {
+  position: relative;
+  padding: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #053674;
+}
+
+.accordion8 .ContentBx8 .label::before {
+  content: "\f077";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  position: relative;
+  color: #053674;
+  top: 40%;
+  left: 85%;
+  font-size: 0.75rem;
+}
+
+.accordion8.ContentBx8 .check-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion8 .ContentBx8 .check-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion8 .ContentBx8.active .check-wrapper {
+  height: 300px;
+}
+.accordion8 .ContentBx8.active .label::before {
+  content: "\f078";
+}
+
+/* accordion9 div */
+.accordion9 .ContentBx9 {
+  position: relative;
+}
+
+.accordion9 .ContentBx9 .label {
+  position: relative;
+  padding: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #053674;
+}
+
+.accordion9 .ContentBx9 .label::before {
+  content: "\f077";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  position: relative;
+  color: #053674;
+  top: 40%;
+  left: 85%;
+  font-size: 0.75rem;
+}
+
+.accordion9.ContentBx9 .check-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion9 .ContentBx9 .check-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion9 .ContentBx9.active .check-wrapper {
+  height: 300px;
+}
+.accordion9 .ContentBx9.active .label::before {
+  content: "\f078";
+}
+/* accordion10 div */
+.accordion10 .ContentBx10 {
+  position: relative;
+}
+
+.accordion3 .ContentBx3 .label {
+  position: relative;
+  padding: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #053674;
+}
+
+.accordion10 .ContentBx10 .label::before {
+  content: "\f077";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  position: relative;
+  color: #053674;
+  top: 40%;
+  left: 85%;
+  font-size: 0.75rem;
+}
+
+.accordion10.ContentBx10 .check-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion10 .ContentBx10 .check-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion10 .ContentBx10.active .check-wrapper {
+  height: 300px;
+}
+.accordion10.ContentBx10.active .label::before {
+  content: "\f078";
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background-color: none;
+  border: 2px solid #053674;
+  cursor: pointer;
+  border-radius: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  padding-left: 50px;
+}
+
+.wrapper label {
+  color: #03244d;
+  cursor: pointer;
+  font-size: small;
+}
+
+input[type="checkbox"]::after {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 10px;
+  color: white;
+  display: none;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #053674;
+}
+
+input[type="checkbox"]:checked::after {
+  display: block;
+  position: fixed;
+}
