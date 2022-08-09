@@ -31,13 +31,39 @@
             <input type="text" placeholder="What are you shopping for?">
             <button>Search <i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <div class="item-d"><i class="fa-solid fa-circle-user fa-3x"></i>John Doe</div>
+        <div class="item-d">
+            <i class="fa-regular fa-user fa-2x"></i>
+            <p>John Doe</p>
+        </div>
     </div>
 
     <div class="body">
         <div class="body-item-a">
             <div class="accordion">
                 <div class="ContentBx">
+                    <div class="label">
+                        All Categories
+                    </div>
+                    <div class="check-wrapper">
+                        <div class="wrapper">
+                            <input type="checkbox" id="Laptop-Accessories">
+                            <label for="Laptop-Accessories">Laptop & Accessories</label>
+                        </div>
+                        <div class="wrapper">
+                            <input type="checkbox" id="Mobile-Accessories">
+                            <label for="Mobile-Accessories">Mobile & Accessories</label>
+                        </div>
+                        <div class="wrapper">
+                            <input type="checkbox" id="Tablets-Accessories">
+                            <label for="Tablets-Accessories">Tablets & Accessories</label>
+                        </div>  
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="accordion2">
+                <div class="ContentBx2">
                     <div class="label">
                         Tablet & Accessories
                     </div>
@@ -48,7 +74,7 @@
                         </div>
                         <div class="wrapper">
                             <input type="checkbox" id="Bluetooth">
-                            <label for="Blootooth">Bluetooth Speaker</label>
+                            <label for="Bluetooth">Bluetooth Speaker</label>
                         </div>
                         <div class="wrapper">
                             <input type="checkbox" id="Cables">
@@ -70,18 +96,12 @@
                             <input type="checkbox" id="Other">
                             <label for="Other">Other gadgets</label>
                         </div>
-                       
-                        
-                        
-                        
-                        
-
                     </div>
                 </div>
 
             </div>
-            <div class="accordion2">
-                <div class="ContentBx2">
+            <div class="accordion3">
+                <div class="ContentBx3">
                     <div class="label">
                         Brands
                     </div>
@@ -114,12 +134,52 @@
                             <input type="checkbox" id="Infinix">
                             <label for="Infinix">Infinix</label>
                         </div>
-                       
-                        
-                        
-                        
-                        
+                    </div>
+                </div>
 
+            </div>
+
+            <div class="accordion4">
+                <div class="ContentBx4">
+                    <div class="label">
+                        Online Shop
+                    </div>
+                    <div class="check-wrapper">
+                        <div class="wrapper">
+                            <input type="checkbox" id="Jumia">
+                            <label for="Jumia">Jumia</label>
+                        </div>
+                        <div class="wrapper">
+                            <input type="checkbox" id="Konga">
+                            <label for="Konga">Konga</label>
+                        </div>
+                        <div class="wrapper">
+                            <input type="checkbox" id="Slot">
+                            <label for="Slot">Slot</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="accordion5">
+                <div class="ContentBx5">
+                    <div class="label">
+                        Price
+                    </div>
+                    <div class="check-wrapper">
+                        <div class="wrapper">
+                            <input type="checkbox" id="stock">
+                            <label for="stock">Show out of stock</label>
+                        </div>
+                        <div class="wrapper">
+                            <input type="checkbox" id="price-drop">
+                            <label for="price-drop">Price drop</label>
+                        </div>
+                        <div class="wrapper">
+                            <input type="checkbox" id="shop-smart">
+                            <label for="shop-smart">Shop smart price</label>
+                        </div>
                     </div>
                 </div>
 
@@ -405,17 +465,41 @@
     <script>
         const accordion = document.getElementsByClassName('ContentBx')
         const accordion2 = document.getElementsByClassName('ContentBx2')
+        const accordion3 = document.getElementsByClassName('ContentBx3')
+        const accordion4 = document.getElementsByClassName('ContentBx4')
+        const accordion5 = document.getElementsByClassName('ContentBx5')
 
-        // To toggle the accordion menu 'Tablets & Accessories' on the left hand side
+        // To toggle the accordion menu 'All Categories' on the left hand side
 
     for (i = 0; i < accordion.length; i++){
         accordion[i].addEventListener('click',function(){
         this.classList.toggle('active')
     })
     }
-        // To toggle the accordion menu 'Brands' on the left hand side
+        // To toggle the accordion menu 'Tablets & Accessories' on the left hand side
     for (i = 0; i < accordion2.length; i++){
         accordion2[i].addEventListener('click',function(){
+        this.classList.toggle('active')
+    })
+    }
+    // To toggle the accordion menu 'Brands' on the left hand side
+    for (i = 0; i < accordion3.length; i++){
+        accordion3[i].addEventListener('click',function(){
+        this.classList.toggle('active')
+    })
+    }
+
+    // To toggle the accordion menu 'Online Shop' on the left hand side
+
+    for (i = 0; i < accordion4.length; i++){
+        accordion4[i].addEventListener('click',function(){
+        this.classList.toggle('active')
+    })
+    }
+    // To toggle the accordion menu 'Price' on the left hand side
+
+    for (i = 0; i < accordion5.length; i++){
+        accordion5[i].addEventListener('click',function(){
         this.classList.toggle('active')
     })
     }
