@@ -172,6 +172,10 @@ clear: both;
 i {
     margin-right: 10px;
 }
+.list-content i {
+    margin-right: 10px;
+    color: #F6CC5C;
+}
 .list-button{
     float: left;
     width: 25%;    
