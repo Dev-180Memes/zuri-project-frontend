@@ -333,11 +333,13 @@ i {
   display: flex;
   flex-flow: column;
 }
+nav {
+        margin-bottom: 20px;
+    }
 /*###  STYLE MENU SEARCH  ###*/
 .search .search-container {
   float: none;
-  width: 85%;
-  margin: auto;
+  text-align: center;
 }
   .search input[type=text] {
   padding: 20px;
@@ -349,7 +351,7 @@ i {
     }
  /*###  STYLE MENU SEARCH  ###*/   
 .search input[type=text] {
-  padding: 9px 5px 5px 5px;
+  padding: 9px 5px 9px 5px;
   margin-top: 15px;
   font-size: 14px;
   border-radius:  0;

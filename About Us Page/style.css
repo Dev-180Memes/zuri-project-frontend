@@ -112,7 +112,7 @@ clear: both;
 
 .search .search-container button {
   padding: 9px 10px 9px 10px;
-  margin-top: px;
+  margin-top: ;
   background: #f1f1f1;
   font-size: 11px;
   border-radius: 0 5px 5px 0;
@@ -250,9 +250,14 @@ h4 {
     background-color: #fff;
     width: auto;
     }
- /*###  STYLE MENU SEARCH  ###*/   
+ /*###  STYLE MENU SEARCH  ###*/ 
+.search .search-container {
+  float: none;
+  text-align: center;
+}
+    
 .search input[type=text] {
-  padding: 9px 5px 5px 5px;
+  padding: 9px 5px 9px 5px;
   margin-top: 15px;
   font-size: 14px;
   border-radius:  0;
