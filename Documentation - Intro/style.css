@@ -185,11 +185,7 @@ p.question {
     font-size: 13px;
     text-align: center;
 }
-.stop-float {
-content: "";
-display: table;
-clear: both;
-}
+
 /*#### STYLE HEADING, INTRO AND EMAIL TEXT ####*/
 
 /*### STYLE FOOTER SECTION ###*/
@@ -235,6 +231,10 @@ width: 100%;
 .go {
   margin-top: 20px;
   float: ;
-  
+}
+.stop-float {
+content: "";
+display: table;
+clear: both;
 }
 }
