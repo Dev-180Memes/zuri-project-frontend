@@ -224,7 +224,7 @@ background-color: #fff;
 display: inline-block;
 width: 100%;
 }
-.left-box {
+.left-box, .left-column, .menu-column {
     flex: 100%;
 }
 .left-right {
