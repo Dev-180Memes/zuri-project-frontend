@@ -185,7 +185,9 @@ p.question {
     font-size: 13px;
     text-align: center;
 }
-
+.stop-float {
+    text-align: center;
+}
 
 /*### STYLE FOOTER SECTION ###*/
 .footer-col {
@@ -242,9 +244,5 @@ width: 100%;
 .go {
   margin-top: 20px;
 }
-.stop-float {
-content: "";
-display: table;
-clear: both;
-}
+
 }
