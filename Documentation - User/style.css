@@ -73,7 +73,7 @@ font-size: 12px;
 /*###  STYLE MENU SEARCH  ###*/
 .search .search-container {
   float: right;
-  padding: 0 20px 20px 20px;
+  padding: 0 35px 20px 20px;
 }
 
 .search:after {
@@ -104,7 +104,7 @@ clear: both;
 .search .search-container button {
   padding: 9px 10px 9px 10px;
   margin-top: px;
-  background: #f1f1f1;
+  background: #dcdc00;
   font-size: 11px;
   border-radius: 0 5px 5px 0;
   border: 1px solid #000;
@@ -138,58 +138,55 @@ width: 70%;
     padding-left: 20px;
 }
 .content-container {
-    padding: 100px 200px;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.left-box {
+    flex: 30%;
+}
+.right-box {
+    flex: 70%;
+}
+.right-box-content {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+input[type=checkbox] {
+    margin-bottom: 20px;
+}
+.back {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 50px;
+}
+.back:hover {
+  background-color: blue;
+  color: #fff;
+  border-color: blue;
+}
+.go {
+  padding: 10px 20px;
+  background-color: blue;
+  border: 1px solid blue;
+  border-radius: 50px;
+  float: right;
+    color: #fff;
+}
+.go:hover {
+  background-color: #FFF;
+  color: #000;
+  border-color: #000;
+}
+p.question {
+    margin-top: 50px;
+    font-size: 13px;
+    text-align: center;
 }
 
 
-/*#### STYLE HEADING, INTRO AND EMAIL TEXT ####*/
-
-h1 {
-font-weight: 700;
-font-size: 40px;
-}
-
-p.intro {
-color: #464646;
-margin-left: 15px;
-font-weight: 600;
-font-size: 20px;
-}
-
-p.email-us {
-color: #706f6f;
-margin-left: 20px;
-font-size: 19px;
-font-weight: 600;
-margin-top: 50px;
-}
-
-    
-/*#### VERIFY BUTTON ####*/
-a.button:link, a.button:visited {
-background-color: #053573;
-color: white;
-padding: 15px 40px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-weight: 600;
-font-size: 30px;
-min-width: 100%;
-margin: 50px 10px 20px;
-}
-
-a.button:hover, a.button:active {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/*#### EMAIL LINK ANCHOR ####*/
-a.mail:link, a.mail:visited {
-  color: #b7b4b4;
-}
-
-    
-    
 /*### STYLE FOOTER SECTION ###*/
 .footer-col {
   display: flex;
@@ -212,27 +209,42 @@ h4 {
     color: #053573;
 }
 
-
+/*####  MOBILE RESPONSIVE DESIGN  ####*/
 @media screen and (max-width: 700px) {
-.left-column, .menu-column, .right-column {
-    flex: 100%;
-    }
-p.intro {
-margin-left: 0;
+.search-container {
+  padding: 20px;
 }
-a.button:link, a.button:visited {
-margin-left: 0;
-    }
-p.email-us {
-margin-left: 20px;
-}
-    .content-container {
+.content-container {
     padding: 20px;
 }
+.search input[type=text] {
+  padding: 6px 35px 6px 5px;
+}
+.search-container {
+        text-align: center; 
+    }   
+.search .search-container {
+  float: none;
+}
+
 div.white-container {
 padding: 0px;
 background-color: #fff;
 display: inline-block;
 width: 100%;
+}
+.left-box, .left-column, .menu-column {
+    flex: 100%;
+}
+.left-right {
+    flex: 100%;
+}
+.go {
+  margin-top: 20px;
+}
+.stop-float {
+content: "";
+display: table;
+clear: both;
 }
 }

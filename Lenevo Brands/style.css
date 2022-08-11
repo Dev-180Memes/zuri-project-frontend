@@ -155,6 +155,9 @@ clear: both;
 }
 
 /*### STYLE LISTINGS ###*/
+.sort {
+    text-align: center;
+}
 .list-image{
     float: left;
     width: 20%;
@@ -169,24 +172,33 @@ clear: both;
 i {
     margin-right: 10px;
 }
+.list-content i {
+    margin-right: 10px;
+    color: #F6CC5C;
+}
 .list-button{
     float: left;
     width: 25%;    
     padding: 20px 20px 20px 0;
+    text-align: center;
 }
 .listing:after {
     content: "";
     clear: both;
     display: table;
 }
+.list-content span {
+    color: #053674;
+    font-weight: 600;
+}
 .store {
     margin-top: 95px;
-    background-color: dimgrey;
-    padding: 10px 25px;
+    background-color: #053674;
+    padding: 10px 15px;
     border: none;
     color: #fff;
     border-radius: 5px;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 16px,
 }
 .listing {
@@ -196,6 +208,11 @@ i {
 .list-padding {
     padding: 20px 20px;
 }
+.list-content p {
+    font-size: 14px;
+    margin-right: 20px;
+}
+
 /*### STYLE PAGINATION ###*/
 .center {
   text-align: center;
@@ -265,8 +282,7 @@ h4 {
 /*###  STYLE MENU SEARCH  ###*/
   .search .search-container {
   float: none;
-  width: 85%;
-  margin: auto;
+  text-align: center;
 }
   .search input[type=text] {
   padding: 20px;
@@ -278,7 +294,7 @@ h4 {
     }
  /*###  STYLE MENU SEARCH  ###*/   
 .search input[type=text] {
-  padding: 9px 5px 5px 5px;
+  padding: 9px 5px 9px 5px;
   margin-top: 15px;
   font-size: 14px;
   border-radius:  0;
@@ -300,7 +316,7 @@ h4 {
   color:aliceblue;
   height: 30px;
 }
-    .brands {
+.brands {
         display: none;
     }
     
