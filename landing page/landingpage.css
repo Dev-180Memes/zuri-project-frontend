@@ -101,6 +101,7 @@
   .search input[type=text] {
     padding: 6px 150px 6px 5px;
     margin-top: 8px;
+    width: 600px;
     font-size: 14px;
     border-radius:5px 0 0 5px;
     border: 1px solid #000;
@@ -120,7 +121,7 @@
   
   .search .search-container button {
     padding: 9px 10px 9px 10px;
-    margin-top: px;
+    margin-top: 2px;
     background: #F6CC5C;
     font-size: 11px;
     border-radius: 0 5px 5px 0;
@@ -130,6 +131,7 @@
     height: 30px;
     margin-left: 0;
     border-left: none;
+    
   }
     /*### STYLE BRANDS ###*/
  
@@ -420,7 +422,7 @@
   
   /* Responsive layout WITH FLEX - when the screen is less than 700px wide, make the columns stack on top of each other instead of next to each other */
   
-  @media screen and (max-width: 775px) {
+  @media screen and (max-width: 895px) {
     /*###  AJUST ROW ON MOBILE  ###*/  
     .row {  
     display: flex;
@@ -434,6 +436,7 @@
   }
     .search input[type=text] {
     padding: 20px;
+  
   }
   /*###  WHITE CONTENT BOX  ###*/
   .white-bg {
@@ -443,13 +446,16 @@
    /*###  STYLE MENU SEARCH  ###*/   
   .search input[type=text] {
     padding: 9px 5px 5px 5px;
-    margin-top: 15px;
+    margin-top: 250px;
     font-size: 14px;
     border-radius:  0;
     border: 1px solid #efefef;
     height: 30px;
+    width: 300px;
   }
-  
+  .right-column {
+    margin-top: 55px;
+  }
   ::placeholder {
     font-size: 12px;
   }    
